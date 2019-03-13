@@ -44,3 +44,6 @@ app.get('/info', function(req, res) {
     name: oasDoc.info.title
   });
 });
+app.get('/', function (req, res) {
+  res.redirect('/docs');
+});
