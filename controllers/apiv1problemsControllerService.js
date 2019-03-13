@@ -9,7 +9,7 @@ module.exports.newProblem = function newProblem(req, res, next) {
   var begin = beginHR[0] * 1000000 + beginHR[1] / 1000;
 
   var solutionSortedArray = qsProblem(problemRequest.problem.unsortedArray);
-  
+   
   var endHR = process.hrtime()
   var end = endHR[0] * 1000000 + endHR[1] / 1000;
 
